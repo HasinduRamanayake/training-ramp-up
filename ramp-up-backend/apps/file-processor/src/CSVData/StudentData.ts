@@ -21,8 +21,8 @@ export class StudentData {
   address: string;
 
   @Field()
-  @Column('varchar')
-  mobileNo: string;
+  @Column('integer')
+  mobileNo: number;
 
   @Field()
   @Column('date')
@@ -30,7 +30,7 @@ export class StudentData {
 
   @Field()
   @Column('integer')
-  age: string;
+  age: number;
 
   @Field()
   @Column('boolean')

@@ -20,9 +20,9 @@ export class Student {
   @Column()
   address: string;
 
-  @Field()
+  @Field(()=>Int)
   @Column()
-  mobileNo: string;
+  mobileNo: number;
 
   @Field(()=>Date)
   @Column()

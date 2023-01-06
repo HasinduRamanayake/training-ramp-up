@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   student-records:
-    image: student-records-backend    
+    image: student-records-backend 
     ports:
       - "5000:5000"
     volumes:
@@ -26,7 +26,7 @@ services:
 
   file-processor:
     image: file-processor-backend
-    ports: 
+    ports:
       - "4500:4500"
     volumes:
       - .:/usr/src/app

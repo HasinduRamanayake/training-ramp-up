@@ -2,7 +2,6 @@ import { Field, InputType, Int } from '@nestjs/graphql';
 
 @InputType()
 export class AddStudentDTO {
-    
   @Field()
   name: string;
 
@@ -12,15 +11,15 @@ export class AddStudentDTO {
   @Field()
   address: string;
 
-  @Field()
-  mobileNo: string;
+  @Field(() => Int)
+  mobileNo: number;
 
-  @Field(()=> Date)
+  @Field(() => Date)
   DOB: Date;
 
-  @Field(()=> Int)
+  @Field(() => Int)
   age: number;
 
-   @Field()
+  @Field()
   isArchive: boolean;
 }

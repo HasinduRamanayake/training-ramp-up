@@ -17,10 +17,11 @@ export class uploadProcessor {
     const csv = require('csvtojson');
     const csvFilePath = process.cwd() + '/' + job.data.file.path;
     const studentDataList = await csv().fromFile(csvFilePath);
-    this.studentDataRepo.save(studentDataList);
-       
+    this.studentDataRepo.save(studentDataList);    
+    
    
   }
+  
   @OnQueueActive()
   onActive(job: Job) {
     console.log(

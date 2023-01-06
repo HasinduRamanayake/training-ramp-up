@@ -1,16 +1,10 @@
-FROM node:16
+FROM node:16.14
 
 WORKDIR /usr/src/app
 
-RUN npm install
-
 RUN npm -v
 
-COPY package.json ./
-
 COPY . .
-
-RUN npm run build
 
 EXPOSE 4500
 

@@ -1,14 +1,10 @@
-FROM node:16.14.1 as base
+FROM node:16.14
 
 WORKDIR /usr/src/app
 
 RUN npm -v
 
-COPY package.json ./
-
 COPY . .
-
-RUN npm run build
 
 EXPOSE 3001
 

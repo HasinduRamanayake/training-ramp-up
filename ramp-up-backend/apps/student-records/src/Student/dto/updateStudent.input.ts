@@ -4,7 +4,7 @@ import { Field, InputType, Int } from '@nestjs/graphql';
 export class UpdateStudentDTO {
   @Field()
   id: string;
-  
+
   @Field()
   name: string;
 
@@ -14,13 +14,13 @@ export class UpdateStudentDTO {
   @Field()
   address: string;
 
-  @Field()
-  mobileNo: string;
+  @Field(() => Int)
+  mobileNo: number;
 
-  @Field(()=>Date)
+  @Field(() => Date)
   DOB: Date;
 
-  @Field(()=>Int)
+  @Field(() => Int)
   age: number;
 
   @Field()

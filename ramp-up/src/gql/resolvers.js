@@ -23,7 +23,7 @@ export const STUDENT_ADD_MUTATION = gql`
     $name: String!,
     $gender: String!,
     $address: String!,
-    $mobileNo: String!,
+    $mobileNo: Int!,
     $DOB: DateTime!,
     $age: Int!,
     $isArchive: Boolean!
@@ -56,7 +56,7 @@ export const STUDENT_UPDATE_MUTATION = gql`
     $name: String!
     $gender: String!
     $address: String!
-    $mobileNo: String!
+    $mobileNo: Int!
     $DOB: DateTime!
     $age: Int!
     $isArchive: Boolean!

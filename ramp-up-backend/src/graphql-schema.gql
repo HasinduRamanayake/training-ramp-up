@@ -7,7 +7,7 @@ type Student {
   name: String!
   gender: String!
   address: String!
-  mobileNo: String!
+  mobileNo: Int!
   DOB: DateTime!
   age: Int!
   isArchive: Boolean!
@@ -32,7 +32,7 @@ input AddStudentDTO {
   name: String!
   gender: String!
   address: String!
-  mobileNo: String!
+  mobileNo: Int!
   DOB: DateTime!
   age: Int!
   isArchive: Boolean!
@@ -43,7 +43,7 @@ input UpdateStudentDTO {
   name: String!
   gender: String!
   address: String!
-  mobileNo: String!
+  mobileNo: Int!
   DOB: DateTime!
   age: Int!
   isArchive: Boolean!
